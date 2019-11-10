@@ -5,6 +5,10 @@
 
 >require:expect,sqlite3
 
+使用方法：
+
+` bash jump.sh  `
+
 ### 截图
 
 >recodeScreen
