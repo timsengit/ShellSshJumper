@@ -5,16 +5,20 @@
 
 >require:expect,sqlite3
 
-###截图
+### 截图
 
 >recodeScreen
-![alt text](img/recodeScreen.gif)
+>>![alt text](img/recodeScreen.gif)
+
 >addHost
-![addHost](img/addHost.png)
+>>![addHost](img/addHost.png)
+
 >listHost
-![listHost](img/listHost.png)
+>>![listHost](img/listHost.png)
+
 >jumpHost
-![jumpHost](img/jumpHost.png)
+>>![jumpHost](img/jumpHost.png)
+
 
 ## Linux ssh 登陆工具:
 
@@ -23,7 +27,7 @@
 - 用户名和密码都是存sqlite
 - 使用密钥的话保存密钥，并把密码设置成密钥路径就可以了，注意密钥权限设置
 
-#版本规划
+## 版本规划
 >1.0
 >> sqlite curd jump
 
