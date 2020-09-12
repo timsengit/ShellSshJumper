@@ -1,3 +1,5 @@
 *.tmp
 *.db
+*.ini
+*.inibk
 .idea

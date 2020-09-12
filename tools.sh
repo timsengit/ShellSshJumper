@@ -26,6 +26,11 @@ function line() {
   echo "-----------------------------------------"
 }
 
+function log(){
+    return;
+    color green "$1"
+}
+
 
 function logo() {
   echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++"

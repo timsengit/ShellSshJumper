@@ -1,9 +1,10 @@
 # ShellSshJumper
-一个使用shell编写的基于sqlte的跳板机，很小巧对比与jumpserver,不需要堡垒机
+一个使用shell编写的基于~~sqlite~~文件的跳板机,依赖最小化，很小巧对比与jumpserver,不需要堡垒机
+## all shell
 
 适合应对不想搭建堡垒机，又有多台主机需要管理的情况
 
->require:expect,sqlite3
+>require:expect
 
 使用方法：
 
@@ -32,6 +33,9 @@
 - 使用密钥的话保存密钥，并把密码设置成密钥路径就可以了，注意密钥权限设置
 
 ## 版本规划
+
+>1.1.1
+>>re all shell ,be simple
 
 >1.1
 >>数据库加密
