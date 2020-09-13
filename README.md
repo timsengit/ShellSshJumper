@@ -1,16 +1,37 @@
-# ShellSshJumper
-一个使用shell编写的基于~~sqlite~~文件的跳板机,依赖最小化，很小巧对比与jumpserver,不需要堡垒机
-## all shell
+<h1 align="center"><a href='https://github.com/timsengit/ShellSshJumper.git' target="_blank" >ShellSshJumper</a></h1>
 
-适合应对不想搭建堡垒机，又有多台主机需要管理的情况
+<p align="center">
+A file-based jumpserver written with a shell,it is small compare with other professional jumpserver such as jumperserver etc.
+  </br>
+It can be used in a general small scenario, suitable for situations where you don't want to install a jumpserver but there are multiple hosts to manage
+</p>
 
->require:expect
+<p align="center">
+  🇨🇳 <a href="./README.zh-CN.md">中文版介绍</a>
+</p>
 
-使用方法：
+---
 
-` bash jump.sh  `
+## Features
 
-### 截图
+- Host management: add, delete, update , list and jump
+- Sort by number of connections
+- Full shell, simplified implementation and dependencies
+
+## Install and useage
+
+```bash
+git clone https://github.com/timsengit/ShellSshJumper.git
+
+cd ShellSshJumper
+
+bash jump.sh
+```
+
+> Tips: Please install expect
+
+
+### ScreenShot
 
 >recodeScreen
 >>![alt text](img/recodeScreen.gif)
@@ -25,20 +46,20 @@
 >>![jumpHost](img/jumpHost.png)
 
 
-## Linux ssh 登陆工具:
 
-###　一.说明
-- 支持秘密和密钥两种格式
-- 用户名和密码都是存~~sqlite~~文件（每个host一个文件）
-- 使用密钥的话保存密钥，并把密码设置成密钥路径就可以了，注意密钥权限设置
+### Instruction
+- Linux ssh Login tool
+- Support for both secret and key formats
+- Both the username and password are saved files (one file per host)
+- To use the key, save the key and set the password to the key path. Pay attention to the key permissions
 
-## 版本规划
+## versions
 
 >1.1.1
 >>re all shell ,be simple
 
 >1.1
->>数据库加密
+>>Database encryption
 
 >1.0
 >> sqlite curd jump
