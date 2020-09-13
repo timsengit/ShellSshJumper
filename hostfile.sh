@@ -109,7 +109,8 @@ function listHost() {
       done
     else
       log 'list all'$inifile
-      for hostitem in $(grep 'logintimes=' $inifile | sort -t '=' -k 2 -r | cut -d/ -f2 | cut -d. -f1); do
+      for hostitem in $(grep -H 'logintimes=' $inifile | sort -t '=' -k 2 -r | cut -d/ -f2 | cut -d. -f1); do
+        log "list hostid:$hostitem"
         showConfigN $hostitem
         echo $hostitem >>host.tmp
       done
