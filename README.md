@@ -17,6 +17,7 @@ It can be used in a general small scenario, suitable for situations where you do
 - Host management: add, delete, update , list and jump
 - Sort by number of connections
 - Full shell, simplified implementation and dependencies
+- simple passwd encryption: Base64 code with passwdsalt head
 
 ## Install and useage
 
