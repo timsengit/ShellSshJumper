@@ -2,6 +2,8 @@
 
 source tools.sh
 
+passwdsalt='ssssss'
+
 function getIniFilePath() {
   id=$1
   echo "data/$1.ini"
@@ -60,6 +62,7 @@ function addHost() {
   echo 'host='$host >$inifile
   echo 'port='$port >>$inifile
   echo 'user='$user >>$inifile
+  passwd=$(echo $passwdsalt$passwd|base64 -i)
   echo 'passwd='$passwd >>$inifile
   echo 'logintimes=0' >>$inifile
   echo 'desc='$desc >>$inifile
@@ -154,6 +157,7 @@ function updateHost() {
   read -p '请输入登录密码: ' passwd
   if [[ -n "$passwd" ]]; then
     #更新
+    passwd=$(echo $passwdsalt$passwd|base64 -i)
     sed -i '/^passwd=/cpasswd='$passwd $inifile
   fi
 
@@ -193,7 +197,13 @@ function jumpTo() {
     ssh -i $direc/keys/$passwd $user@$host -p $port
   else
     echo "expect -f $direc/ssh_login.exp $host $user $passwd $port"
+    passwd=$(echo $passwd|base64 -d)
+    passwd=$(echo ${passwd#$passwdsalt})
+    echo "expect -f $direc/ssh_login.exp $host $user $port"
     expect -f $direc/ssh_login.exp $host $user $passwd $port
   fi
 
 }
+
+#up text passwd to base64 code with passwdsalt head:
+#sed -i '/^passwd=/cpasswd='$(echo ssssss$(sed '/^passwd=/!d;s/passwd=//' 2.ini)|base64 -i) 2.ini
