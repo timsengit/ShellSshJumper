@@ -32,7 +32,7 @@ bash jump.sh
 > 提示: 先安装 expect
 
 
-### 截图
+### 截图(看不了图去[码云](https://gitee.com/timsengit/ShellSshJumper)看)
 
 >recodeScreen
 >>![alt text](img/recodeScreen.gif)
