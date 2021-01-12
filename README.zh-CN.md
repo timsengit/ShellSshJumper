@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  🇨🇳 <a href="./README.md">English Introduce</a>
+  🇬🇧 <a href="./README.md">English Introduce</a>
 </p>
 
 ---
