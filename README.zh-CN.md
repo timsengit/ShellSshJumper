@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  🇨🇳 <a href="./README.zh-CN.md">中文版介绍</a>
+  🇨🇳 <a href="./README.md">English Introduce</a>
 </p>
 
 ---
