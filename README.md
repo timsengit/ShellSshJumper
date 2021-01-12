@@ -1,7 +1,7 @@
 <h1 align="center"><a href='https://github.com/timsengit/ShellSshJumper.git' target="_blank" >ShellSshJumper</a></h1>
 
 <p align="center">
-A file-based jumpserver written with a shell,it is small compare with other professional jumpserver such as jumperserver etc.
+A file-based jumpserver ssh login tool written with a shell,it is small compare with other professional jumpserver such as jumperserver etc.
   </br>
 It can be used in a general small scenario, suitable for situations where you don't want to install a jumpserver but there are multiple hosts to manage
 </p>
