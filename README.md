@@ -32,7 +32,7 @@ bash jump.sh
 > Tips: Please install expect
 
 
-### ScreenShot
+### ScreenShot(if pic not show please go to [gitee](https://gitee.com/timsengit/ShellSshJumper))
 
 >recodeScreen
 >>![alt text](img/recodeScreen.gif)
