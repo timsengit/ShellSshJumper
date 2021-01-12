@@ -1,7 +1,7 @@
 <h1 align="center"><a href='https://github.com/timsengit/ShellSshJumper.git' target="_blank" >ShellSshJumper</a></h1>
 
 <p align="center">
-一个使用shell编写的基于文件的跳板机，相比与jumpserver等专业跳板机堡垒机很小巧。
+一个使用shell编写的基于文件的跳板机ssh login tool，相比与jumpserver等专业跳板机堡垒机很小巧。
 </br>
 可以解决一般的小型的使用场景，适合应对不想搭建堡垒机，又有多台主机需要管理的情况。
 </p>
